@@ -8,70 +8,24 @@
     <meta name="description" content="Main page for Roberts Trading Card Collection">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="stylesheet" href="main.css">
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![end if]-->
     <style>
-        body {
-            margin-top: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #C0C0C0;
-        }
-        
-        #mainheader {
-            background-color: #B0C4DE ;
-        }
-        
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
-
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        section,
-        footer,
-        aside,
-        nav,
-        main,
-        article,
-        figure {
-            display: block;
-        }
-
-
+    
     </style>
 </head>
 
 <body > 
     <header id="mainheader">
         <nav>
-            <img src="images/8314_pokemon-trading-card-game-prev.png" height="55" />
+            <ul>
+                <li><img src="images/8314_pokemon-trading-card-game-prev.png" height="55" /></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardcollectionoverview.html">Whole Card Collection</a></li>
+            </ul>
+            
         </nav>
     </header>
 
@@ -81,6 +35,11 @@
             <header>
                 <h4 style="text-align: center;">Search my collection</h4>
             </header>
+            <ul>
+                <li><a href="cardcollectionoverview.html">Whole Collection</a></li>
+                <li><a href="#promos">Feature Card of the Week</a></li>
+            </ul>
+            
             <input type="search" class="searchbox" placeholder="Search my collection" />
         </aside>
 
@@ -102,8 +61,8 @@
                     Robert has collected some super rare cards that will go down as an collector. We will get to showcase Robert's collection in what will be called Robs Card Collection.
                 </p>
             </article>
-            <section>
-                <h3 style="font-family: Arial, Helvetica, sans-serif;">Feature Card of the Week for 10/25/2021-10/31/2021</h3>
+            <section id="promos">
+                <h3 style="font-family: Arial, Helvetica, sans-serif;">Feature Card of the Week for 11/01/2021-11/07/2021</h3>
                 <h4>2002 Metal Raiders Yu Gi Oh Beckett Graded 10 - Great Moth</h4>
                 <img src="great-moth.jpg" width="500" height="300"/>
             </section>
@@ -111,6 +70,7 @@
         <footer>
             <p> My email is <address>robertpowell15@yahoo.com</address>
             </p>
+            <p>Contact me via <a href="robertpowell15@yahoo.com">email</a></p>
             <small>Roberts Trading Card Collection - All rights reserved</small>
         </footer>
 
