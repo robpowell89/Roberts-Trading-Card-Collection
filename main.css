@@ -70,7 +70,7 @@ nav>ul>li a {
 }
 
 p {
-   color:green; 
+   color: green; 
 }
 
 p {
@@ -98,8 +98,23 @@ h5,
 h6 {
     letter-spacing: 2px;
     text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h4 {
     text-align: center;
 }
+
+.TopCardoftheWeek-Promotion {
+    background-color: blue;
+    color: white;
+    width: 450px;
+    text-align: center;
+    border: 10px solid black;
+}
+
+.TopCardoftheWeek-Promotion img {
+    width: 50%;
+}   
+
+
