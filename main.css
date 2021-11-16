@@ -105,16 +105,37 @@ h4 {
     text-align: center;
 }
 
-.TopCardoftheWeek-Promotion {
+.TopCardoftheWeekPromotion {
     background-color: blue;
     color: white;
     width: 450px;
     text-align: center;
     border: 10px solid black;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
-.TopCardoftheWeek-Promotion img {
+.TopCardoftheWeekPromotion img {
     width: 50%;
 }   
 
+.Promotion-Yellowgreen {
+    background-color: yellowgreen;
+    border-color: black;
+}
 
+#sidebar-heading {
+    font-size: 24px;
+}
+
+#leftmenu a {
+    color: red;
+}
+
+#leftmenu a:hover {
+    color: lightskyblue;
+}
+
+tr:nth-of-type(odd) {
+    background-color: salmon;
+}
