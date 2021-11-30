@@ -1,173 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Roberts Trading Card Collection</title>
-    <meta name="author" content="Roberts Trading Card Collection"
-    <meta name="description" content="Main page for Roberts Trading Card Collection">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon-32x32.png">
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![end if]-->
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #C0C0C0;
-        }
-        
-        #mainheader {
-            background-color: #B0C4DE ;
-        }
-        
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
 
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
+    <link href="normalize.css" rel="stylesheet">
+    <link href="small.css" rel="stylesheet">
+    <link href="medium.css" rel="stylesheet">
+    <link href="large.css" rel="stylesheet">
 
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
+<title>Home | Roberts Trading Card Collection</title>    
+</head> 
 
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        section,
-        footer,
-        aside,
-        nav,
-        main,
-        article,
-        figure {
-            display: block;
-        }
-
-        table,
-        td,
-        th {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px;
-        }
-    </style>
-</head>
-
-<body > 
-    <header id="mainheader">
-        <nav>
-            <img src="images/8314_pokemon-trading-card-game-prev.png" height="55" />
-        </nav>
+<body>
+    <header class="clearfix">
+    <div class="row limited">
+        <section class="column small-12">
+        <h1>Robert's</h1>
+        <h2>Trading Card Collection</h2>
+        </section>
+    </div><!-- end of row -->
     </header>
 
-    <div style="width:1000px;margin-left: auto;margin-right: auto;">
-        
-        <aside id="leftmenu">
-            <header>
-                <h4 style="text-align: center;">Search my collection</h4>
-            </header>
-            <input type="search" class="searchbox" placeholder="Search my collection" />
-        </aside>
+    <nav class="clearfix">
+        <div class="row limited">
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+            <li><a href="temp-index.html">Home</a></li>
+            <li class="active"><a href="pokemon-cardcollectionoverview.html">Pokemon</a></li>
+            <li><a href="sports-cardcollectionoverview.html">Sports</a></li>
+            <li><a href="yugioh-cardcollectionoverview.html">Yu Gi Oh</a></li>
+            <li><a href="Top Card of the Week-Promotion.html">Top Card of the Week</a></li>
+        </ul>
+            </div><!-- end row -->
+    </nav>
 
-        <main id="main">
-            <table>
-                <!-- <caption>
-                    Overview of my card collection grouped by brands
-                </caption> -->
-                <!-- <thead>
-                    <tr>
-                        <th>Franchise Name</th>
-                        <th>Image of Card</th>
-                        <th>Card Name</th>
-                        <th>Name of Set-Edition</th>
-                        <th>Rarity</th>
-                        <th>Description</th>
-                    </tr>
-                </thead> -->
-                <tbody>
-                    <tr>
-                        <td colspan="4">Here is my Pokemon Collection</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/pokemon trading card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Charizard VMAX.JPG" width="100" /></td>
-                        <td>Charizard VMAX 020/189</td>
-                        <td>Set: 2020 Darkness Ablaze</td>
-                        <td>Rarity: Ultra Rare</td>
-                        <td>Description: hardest card to find and pull in Darkness Ablaze and also most expensive in set</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/pokemon trading card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Pikachu.JPG" width="100" /></td>
-                        <td>Pikachu 25/25</td>
-                        <td>Set: 25th Anniversity McDonalds Set (2021)</td>
-                        <td>Rarity: Holofoil</td>
-                        <td>Description: the holofoil version of the McDonalds set Pikachu</td>
-                    </tr> 
-                    <tr>
-                        <td><img src="images/trading card brands/pokemon trading card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Copycat.JPG" width="100" /></td>
-                        <td>Copycat 222/203</td>
-                        <td>Set: 2021 Evolving Skies</td>
-                        <td>Rarity: Rainbow Rare/Secret</td>
-                        <td>Description: an secret rare version of the trainer card of Copycat</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/pokemon trading card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Glaceon VMAX.JPG" width="100" /></td>
-                        <td>Glaceon VMAX 208/203</td>
-                        <td>Set: 2021 Evolving Skies</td>
-                        <td>Rarity: Rainbow Rare/Secret</td>
-                        <td>Description: an secret rare version of the Glaceon VMAX card</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/pokemon trading card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Leafeon VMAX.JPG" width="100" /></td>
-                        <td>Leafeon VMAX 205/203</td>
-                        <td>Set: 2021 Evolving Skies</td>
-                        <td>Rarity: Alternate Art Secret</td>
-                        <td>Description: an very valuable alt art version</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/pokemon trading card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Umbreon VMAX.JPG" width="100" /></td>
-                        <td>Umbreon VMAX 215/203</td>
-                        <td>Set: 2021 Evolving Skies</td>
-                        <td>Rarity: Alternate Art Secret</td>
-                        <td>Description: an very valuable alt art version and the second most expensive card of the Evolving Skies set</td>
-                    </tr>
-                </tbody>
-            </table>  
-        </main>
-        <footer>
-            <p> My email is <address>robertpowell15@yahoo.com</address>
-            </p>
-            <small>Roberts Trading Card Collection - All rights reserved</small>
-        </footer>
+    <main class="clearfix">
 
-    </div>
 
+        <div class="row limited">
+            <section class="column small-12">
+                <h1>Pokemon</h1>
+            </section>
+        </div><!-- end row-->
+
+
+    <div class="row limited">
+        <section class="column small-6 medium-4 large-3">
+            <h3>Umbreon VMAX</h3>
+            <img src="images/trading card brands/Umbreon VMAX.JPG" alt="Umbreon VMAX">
+            <p>215/203</p>
+            <p>2021 Evovling Skies</p>
+            <p>Rarity: Alternate Art Secret</p>
+        </section>
+        <section class="column small-6 medium-4 large-3">
+    <h3>Leafeon VMAX</h3>
+    <img src="images/trading card brands/Leafeon VMAX.JPG" alt="Leafeon VMAX">
+    <p>205/203</p>
+    <p>2021 Evovling Skies</p>
+    <p>Rarity: Altnernate Art Secret</p>   
+</section>
+<section class="column small-6 medium-4 large-3">
+    <h3>Copycat</h3>
+    <img src="images/trading card brands/Copycat.JPG" alt="Copycat">
+    <p>222/203</p>
+    <p>2021 Evovling Skies</p>
+    <p>Rarity: Rainbow Rare/Secret</p>
+</section>
+
+    
+
+    </div> <!-- end row -->    
+    
+    </main>
+
+    <footer class="clearfix">
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Roberts Trading Card Collection</li>
+                    <li>Harlan County Ky</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>GitHub</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Email: robertpowell15@yahoo.com</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <ul>
+                    <li>2021-All rights reserved</li>
+                </ul>
+                
+            </section>
+        </div><!-- end of the row -->
+            
+    
+    </footer>
+
+    <script src="app.js"></script>
 </body>
-
 </html>

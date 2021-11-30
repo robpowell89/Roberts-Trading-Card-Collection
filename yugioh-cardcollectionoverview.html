@@ -1,173 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Roberts Trading Card Collection</title>
-    <meta name="author" content="Roberts Trading Card Collection"
-    <meta name="description" content="Main page for Roberts Trading Card Collection">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon-32x32.png">
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![end if]-->
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #C0C0C0;
-        }
-        
-        #mainheader {
-            background-color: #B0C4DE ;
-        }
-        
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
 
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
+    <link href="normalize.css" rel="stylesheet">
+    <link href="small.css" rel="stylesheet">
+    <link href="medium.css" rel="stylesheet">
+    <link href="large.css" rel="stylesheet">
 
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
+<title>Home | Roberts Trading Card Collection</title>    
+</head> 
 
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        section,
-        footer,
-        aside,
-        nav,
-        main,
-        article,
-        figure {
-            display: block;
-        }
-
-        table,
-        td,
-        th {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px;
-        }
-    </style>
-</head>
-
-<body > 
-    <header id="mainheader">
-        <nav>
-            <img src="images/8314_pokemon-trading-card-game-prev.png" height="55" />
-        </nav>
+<body>
+    <header class="clearfix">
+    <div class="row limited">
+        <section class="column small-12">
+        <h1>Robert's</h1>
+        <h2>Trading Card Collection</h2>
+        </section>
+    </div><!-- end of row -->
     </header>
 
-    <div style="width:1000px;margin-left: auto;margin-right: auto;">
-        
-        <aside id="leftmenu">
-            <header>
-                <h4 style="text-align: center;">Search my collection</h4>
-            </header>
-            <input type="search" class="searchbox" placeholder="Search my collection" />
-        </aside>
+    <nav class="clearfix">
+        <div class="row limited">
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+            <li><a href="temp-index.html">Home</a></li>
+            <li><a href="pokemon-cardcollectionoverview.html">Pokemon</a></li>
+            <li><a href="sports-cardcollectionoverview.html">Sports</a></li>
+            <li class="active"><a href="yugioh-cardcollectionoverview.html">Yu Gi Oh</a></li>
+            <li><a href="Top Card of the Week-Promotion.html">Top Card of the Week</a></li>
+        </ul>
+            </div><!-- end row -->
+    </nav>
 
-        <main id="main">
-            <table>
-                <!-- <caption>
-                    Overview of my card collection grouped by brands
-                </caption> -->
-                <!-- <thead>
-                    <tr>
-                        <th>Franchise Name</th>
-                        <th>Image of Card</th>
-                        <th>Card Name</th>
-                        <th>Name of Set-Edition</th>
-                        <th>Rarity</th>
-                        <th>Description</th>
-                    </tr>
-                </thead> -->
-                <tbody>
-                    <tr>
-                        <td colspan="4">Here is my Yu Gi Oh Collection</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/Yu Gi Oh Trading Card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Ten Thousand Dragon.JPG" width="100" /></td>
-                        <td>Ten Thousand Dragon</td>
-                        <td>Set: 2020 Battles of Legend: Armageddon-1st Edition</td>
-                        <td>Rarity: 10000 Secret Rare</td>
-                        <td>Description: one of the rarist and most expensive Yu Gi Oh cards ive ever pulled from an pack</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/Yu Gi Oh Trading Card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Great Moth-Beckett Graded 10.JPG" width="100" /></td>
-                        <td>Great Moth-Becktt Graded 10</td>
-                        <td>Set: 2002 Metal Raiders-Unlimted Edition</td>
-                        <td>Rarity: Rare</td>
-                        <td>Description: this is an graded card of 10 which hard to get done; also one of the early day cards of the English Yu Gi Oh Sets</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/Yu Gi Oh Trading Card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Lightning Storm.JPG" width="100" /></td>
-                        <td>Lightning Storm</td>
-                        <td>Set: 2020 Ignition Assualt-1st Edition</td>
-                        <td>Rarity: Starlight Rare</td>
-                        <td>Description: an hard to get card and one of the early starlight rare cards</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/Yu Gi Oh Trading Card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Lightning Storm-King Court.JPG" width="100" /></td>
-                        <td>Lightning Storm</td>
-                        <td>Set: 2021 King Court-1st Edition</td>
-                        <td>Rarity: Ultra Rare</td>
-                        <td>Description: an reprint of the 2020 card but only the Ultra Rare version</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/Yu Gi Oh Trading Card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Chamber Dragonmaid.JPG" width="100" /></td>
-                        <td>Chamber Dragonmaid</td>
-                        <td>Set: 2020 Enternity Code-1st Edition</td>
-                        <td>Rarity: Starlight Rare</td>
-                        <td>Description: an hard to get card and one of the early starlight rare cards</td> 
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/Yu Gi Oh Trading Card game.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/The Phantom Knights of Torn Scales.JPG" width="100" /></td>
-                        <td>The Phantom Knights of Torn Scales</td>
-                        <td>Set: 2020 Enternity Code-1st Edition</td>
-                        <td>Rarity: Starlight Rare</td>
-                        <td>Description: an hard to get card and one of the early starlight rare cards</td> 
-                    </tr>
-                </tbody>
-            </table>  
+    <main class="clearfix">
+
+
+        <div class="row limited">
+            <section class="column small-12">
+                <h1>Yu Gi Oh</h1>
+            </section>
+        </div><!-- end row-->
+
+
+        <div class="row limited">
+            <section class="column small-6 medium-4 large-3">
+                <h3>Ten Thousand Dragon</h3>
+                <img src="images/trading card brands/Ten Thousand Dragon.JPG" alt="Ten Thousand Dragon">
+                <p>BLAR-EN10K</p>
+                <p>2020 Battles of Legend: Armageddon</p>
+                <p>1st Edition</P>
+                <p>Rarity: 10000 Secret Rare</p>
+            </section>
+            <section class="column small-6 medium-4 large-3">
+        <h3>Lightning Storm</h3>
+        <img src="images/trading card brands/Lightning Storm.JPG" alt="Lightning Storm">
+        <p>IGAS-EN067</p>
+        <p>2020 Igniiton Assualt</p>
+        <p>1st Edition</p>
+        <p>Rarity: Starlight/Prismatic Seceret Rare</p>   
+    </section>
+    <section class="column small-6 medium-4 large-3">
+        <h3>The Phantom Knights of Torn Scales</h3>
+        <img src="images/trading card brands/The Phantom Knights of Torn Scales.JPG" alt="The Phanton Kngihts of Torn Scales">
+        <p>PHRA-EN003</p>
+        <p>2020 Phantom Rage</p>
+        <p>1st Edition</p>
+        <p>Rarity: Starlight/Prismatic Seceret Rare</p>
+    </section>
+    <section class="column small-6 medium-4 large-3">
+        <h3>Great Moth-Beckett Graded 10</h3>
+        <img src="images/trading card brands/Great Moth-Beckett Graded 10.JPG" alt="Great Moth-Beckett Graded 10">
+        <p>MRD-070</p>
+        <p>2002 Metal Raiders</p>
+        <p>Unlimted Edition</p>
+        <p>Rarity: Rare</p>
+    </section>
+
+
+
+        </div> <!-- end row -->
+
         </main>
-        <footer>
-            <p> My email is <address>robertpowell15@yahoo.com</address>
-            </p>
-            <small>Roberts Trading Card Collection - All rights reserved</small>
+        
+        <footer class="clearfix">
+            <div class="row limited">
+                <section class="column small-12 medium-6 large-3">
+                    <h2>Location</h2>
+                    <ul>
+                        <li>Roberts Trading Card Collection</li>
+                        <li>Harlan County Ky</li>
+                    </ul>
+                </section>
+                <section class="column small-12 medium-6 large-3">
+                    <h2>Social</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>GitHub</li>
+                    </ul>
+                </section>
+                <section class="column small-12 medium-6 large-3">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Email: robertpowell15@yahoo.com</li>
+                    </ul>
+                </section>
+                <section class="column small-12 medium-6 large-3">
+                    <h2>About Us</h2>
+                    <ul>
+                        <li>2021-All rights reserved</li>
+                    </ul>
+                    
+                </section>
+            </div><!-- end of the row -->
+                
+        
         </footer>
-
-    </div>
-
-</body>
-
-</html>
+    
+        <script src="app.js"></script>
+    </body>
+    </html>

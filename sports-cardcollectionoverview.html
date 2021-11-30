@@ -1,271 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Roberts Trading Card Collection</title>
-    <meta name="author" content="Roberts Trading Card Collection"
-    <meta name="description" content="Main page for Roberts Trading Card Collection">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon-32x32.png">
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![end if]-->
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #C0C0C0;
-        }
-        
-        #mainheader {
-            background-color: #B0C4DE ;
-        }
-        
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
 
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
+    <link href="normalize.css" rel="stylesheet">
+    <link href="small.css" rel="stylesheet">
+    <link href="medium.css" rel="stylesheet">
+    <link href="large.css" rel="stylesheet">
 
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
+<title>Home | Roberts Trading Card Collection</title>    
+</head> 
 
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        section,
-        footer,
-        aside,
-        nav,
-        main,
-        article,
-        figure {
-            display: block;
-        }
-
-        table,
-        td,
-        th {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px;
-        }
-    </style>
-</head>
-
-<body > 
-    <header id="mainheader">
-        <nav>
-            <img src="images/8314_pokemon-trading-card-game-prev.png" height="55" />
-        </nav>
+<body>
+    <header class="clearfix">
+    <div class="row limited">
+        <section class="column small-12">
+        <h1>Robert's</h1>
+        <h2>Trading Card Collection</h2>
+        </section>
+    </div><!-- end of row -->
     </header>
 
-    <div style="width:1000px;margin-left: auto;margin-right: auto;">
-        
-        <aside id="leftmenu">
-            <header>
-                <h4 style="text-align: center;">Search my collection</h4>
-            </header>
-            <input type="search" class="searchbox" placeholder="Search my collection" />
-        </aside>
+    <nav class="clearfix">
+        <div class="row limited">
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+            <li><a href="temp-index.html">Home</a></li>
+            <li><a href="pokemon-cardcollectionoverview.html">Pokemon</a></li>
+            <li class="active`"><a href="sports-cardcollectionoverview.html">Sports</a></li>
+            <li><a href="yugioh-cardcollectionoverview.html">Yu Gi Oh</a></li>
+            <li><a href="Top Card of the Week-Promotion.html">Top Card of the Week</a></li>
+        </ul>
+            </div><!-- end row -->
+    </nav>
 
-        <main id="main">
-            <table>
-                <!-- <caption>
-                    Overview of my card collection grouped by brands
-                </caption> -->
-                <!-- <thead>
-                    <tr>
-                        <th>Franchise Name</th>
-                        <th>Image of Card</th>
-                        <th>Card Name</th>
-                        <th>Name of Set-Edition</th>
-                        <th>Rarity</th>
-                        <th>Description</th>
-                    </tr>
-                </thead> -->
-                <tbody>
-                    <tr>
-                        <td colspan="4">Here is my Basketball Card Collection</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/NBA-College Basketball.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Anthony Edwards (RC).JPG" width="100" /></td>
-                        <td>Anthony Edwards (Rookie Card)</td>
-                        <td>Set: 2020/21 Panini NBA Prizm</td>
-                        <td>Rarity: Silver Prizm</td>
-                        <td>Description: an very rare and sought after Silver Prizm rookie card of the top pick of the 2020 NBA Draft</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/NBA-College Basketball.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Kobe Bryant.JPG" width="100" /></td>
-                        <td>Kobe Bryant-Slam Card</td>
-                        <td>Set: 2020/21 Panini NBA Hoops</td>
-                        <td>Rarity: Gold Foil(?)</td>
-                        <td>Description: an very rare card of an NBA legend and also part of the NBA Hopps Slam Collection</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/NBA-College Basketball.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/LaMelo Ball (RC).JPG" width="100" /></td>
-                        <td>LaMelo Ball (Rookie Card)</td>
-                        <td>Set: 2020/21 Panini Select Basketball</td>
-                        <td>Rarity: Base Set (Premier Level)</td>
-                        <td>Description: the top pick of the 2020 NBA Draft</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/NBA-College Basketball.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Cade Cunningham (RC).JPG" width="100" /></td>
-                        <td>Cade Cunningham (Rookie Card)</td>
-                        <td>Set: 2021/22 Panini Chronicles Draft Picks (Essentials)</td>
-                        <td>Rarity: Pink Parallel</td>
-                        <td>Description: an rare pink parallel version of the top pick of the 2021 NBA draft</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/NBA-College Basketball.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Cade Cunningham-Chronicles Draft Picks-Mosaic (RC).JPG" width="100" /></td>
-                        <td>Cade Cunningham (Rookie Card)</td>
-                        <td>Set: 2021/22 Panini Chronicles Draft Picks (Mosaic)</td>
-                        <td>Rarity: Foil</td>
-                        <td>Description: an foil version of the many Cunningham rookie cards</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/NBA-College Basketball.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Cade Cunningham-Chronicles Draft Picks-Rookies & Stars (RC).JPG" width="100" /></td>
-                        <td>Cade Cunningham (Rookie Card)</td>
-                        <td>Set: 2021/22 Panini Chronicles Draft Picks (Rookies & Stars)</td>
-                        <td>Rarity: Base</td>
-                        <td>Description: rookie card of the top pick of the 2021 NBA Draft</td>
-                    </tr>
-                </tbody>
-            </table>  
+    <main class="clearfix">
+
+
+        <div class="row limited">
+            <section class="column small-12">
+                <h1>Sports</h1>
+                <h1>Baseball</h1>
+            </section>
+        </div><!-- end row-->
+
+
+    <div class="row limited">
+        <section class="column small-6 medium-4 large-3">
+            <h3>Jo Adell (RC)</h3>
+            <img src="images/trading card brands/Jo Adell (RC).JPG" alt="Jo Adell (RC)">
+            <p>2021 Panini Select Baseball</p>
+            <p>Rarity: Red Prizm</p>
+        </section>
+        <section class="column small-6 medium-4 large-3">
+    <h3>Kyle Wright-RPA</h3>
+    <img src="images/trading card brands/Kyle Wright-RPA.JPG" alt="Kyle Wright-RPA">
+    <p>2021 Panini Select Baseball</p>
+    <p>Rarity: RPA</p>   
+</section>
+<section class="column small-6 medium-4 large-3">
+    <h3>Alex Kirilloff-RPA (RC)</h3>
+    <img src="images/trading card brands/Alex Kirilloff-RPA (RC).JPG" alt="Alex Kirilloff-RPA (RC)">
+    <p>2021 Panini Select Baseball</p>
+    <p>Rarity: RPA Rookie Card</p> 
+</section>
+
+        <div class="row limited">
+            <section class="column small-12">
+                <h1>Basketball</h1>
+            </section>
+        </div><!-- end row-->
+
+
+    <div class="row limited">
+        <section class="column small-6 medium-4 large-3">
+            <h3>Cade Cunningham (RC)</h3>
+            <img src="images/trading card brands/Cade Cunningham (RC).JPG" alt="Cade Cunningham (RC)">
+            <p>2021/22 Panini Chronicles Draft Picks (Essentials)</p>
+            <p>Rarity: Pink Parallel</p>
+        </section>
+        <section class="column small-6 medium-4 large-3">
+    <h3>LaMelo Ball (RC)</h3>
+    <img src="images/trading card brands/LaMelo Ball (RC).JPG" alt="LaMelo Ball (RC)">
+    <p>2020/21 Panini Select Basketball</p>
+    <p>Rarity: Rookie Card-Base Set</p>   
+</section>
+<section class="column small-6 medium-4 large-3">
+    <h3>Kobe Bryant-Slam Card</h3>
+    <img src="images/trading card brands/Kobe Bryant.JPG" alt="Kobe Bryant-Slam Card">
+    <p>2020/21 Panini NBA Hoops Basketball</p>
+    <p>Rarity: Gold Foil(?)</p> 
+</section>
+
+        <div class="row limited">
+            <section class="column small-12">
+                <h1>Football</h1>
+            </section>
+        </div><!-- end row-->
+
+
+        <div class="row limited">
+            <section class="column small-6 medium-4 large-3">
+                <h3>Trevor Lawrence (RC)</h3>
+                <img src="images/trading card brands/Trevor Lawrence (RC).JPG" alt="Trevor Lawrence (RC)">
+                <p>2021 Panini Donruss Football</p>
+                <p>Rarity: Base Rookie Card-Gridiron King Insert</p>
+            </section>
+            <section class="column small-6 medium-4 large-3">
+        <h3>Rashod Bateman-RPA (RC)</h3>
+        <img src="images/trading card brands/Rashod Bateman-RPA (RC).JPG" alt="Rashod Bateman-RPA (RC)">
+        <p>2021 Panini Donruss Football</p>
+        <p>Rarity: RPA-Rookie Sweaters</p>   
+    </section>
+    <section class="column small-6 medium-4 large-3">
+        <h3>Christian McCaffrey</h3>
+        <img src="images/trading card brands/Christian McCaffrey.JPG" alt="Christian McCaffrey">
+        <p>2021 Panini Donruss Football</p>
+        <p>Rarity: Base-Power Formulas Insert</p> 
+    </section>
+    
+
+    </div> <!-- end row -->    
+    
+    </main>
+
+    <footer class="clearfix">
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Roberts Trading Card Collection</li>
+                    <li>Harlan County Ky</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>GitHub</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Email: robertpowell15@yahoo.com</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <ul>
+                    <li>2021-All rights reserved</li>
+                </ul>
+                
+            </section>
+        </div><!-- end of the row -->
             
-            <table>
-                <!-- <caption>
-                    Overview of my card collection grouped by brands
-                </caption> -->
-                <!-- <thead>
-                    <tr>
-                        <th>Franchise Name</th>
-                        <th>Image of Card</th>
-                        <th>Card Name</th>
-                        <th>Name of Set-Edition</th>
-                        <th>Rarity</th>
-                        <th>Description</th>
-                    </tr>
-                </thead> -->
-                <tbody>
-                    <tr>
-                        <td colspan="4">Here is my Baseball Card Collection</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/MLB-Minor League.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Alex Kirilloff-RPA (RC).JPG" width="100" /></td>
-                        <td>Alex Kirilloff-RPA (Rookie Card) #d 74/99</td>
-                        <td>Set: 2021 Panini Select Baseball</td>
-                        <td>Rarity: Base version RPA patch</td>
-                        <td>Description: this is an RPA of the top rookie in 2021 MLB</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/MLB-Minor League.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Christian Pache (RC).JPG" width="100" /></td>
-                        <td>Christian Pache-Lighting Strikes Insert (Rookie Card)</td>
-                        <td>Set: 2021 Panini Select Baseball</td>
-                        <td>Rarity: Base Version of Lightning Strikes insert</td>
-                        <td>Description: cool looking Pache RC of the Lightning Strikes insert</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/MLB-Minor League.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Jo Adell (RC).JPG" width="100" /></td>
-                        <td>Jo Adell (Rookie Card) #d 113/199</td>
-                        <td>Set: 2021 Panini Select Baseball</td>
-                        <td>Rarity: Red Prizm</td>
-                        <td>Description: nice looking Red Prizm of Jo Adell (RC)</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/MLB-Minor League.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Kyle Wright-RPA.JPG" width="100" /></td>
-                        <td>Kyle Wright-RPA #d 43/99</td>
-                        <td>Set: 2021 Panini Select Baseball</td>
-                        <td>Rarity: Base version RPA patch</td>
-                        <td>Description: another cool looking RPA</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/MLB-Minor League.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Victor Gonzalez-Autograph (RC).JPG" width="100" /></td>
-                        <td>Victor Gonzalez-Autograph (Rookie Card) #d 44/50 </td>
-                        <td>Set: 2021 Panini Prizm Baseball</td>
-                        <td>Rarity: Rookie Autograph</td>
-                        <td>Description: autogrpaph of one the top rookies of the MLB </td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <table>
-                <!-- <caption>
-                    Overview of my card collection grouped by brands
-                </caption> -->
-                <!-- <thead>
-                    <tr>
-                        <th>Franchise Name</th>
-                        <th>Image of Card</th>
-                        <th>Card Name</th>
-                        <th>Name of Set-Edition</th>
-                        <th>Rarity</th>
-                        <th>Description</th>
-                    </tr>
-                </thead> -->
-                <tbody>
-                    <tr>
-                        <td colspan="4">Here is my Football Card Collection</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/NFL-College Football.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Rashod Bateman-RPA (RC).JPG" width="100" /></td>
-                        <td>Rashod Bateman-RPA (Rookie Card)</td>
-                        <td>Set: 2021 Panini Donruss Football</td>
-                        <td>Rarity: RPA-Rookie Sweaters</td>
-                        <td>Description: an RPA of the Rookie Sweaters from the 2021 Panini Donruss Football holiday blaster packs</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/trading card brands/NFL-College Football.jpg" width="100" /></td>
-                        <td><img src="images/trading card brands/Trevor Lawrence (RC).JPG" width="100" /></td>
-                        <td>Trevor Lawrence (Rookie Card)</td>
-                        <td>Set: 2021 Panini Donruss Football</td>
-                        <td>Rarity: Base-Rookie Card-Gridiron Kings</td>
-                        <td>Description: one of the top inserts of the Gridiron King of the No.1 pick of the 2021 NFL draft</td>
-                    </tr>
-                </tbody>
-            </table>  
-        </main>
-        <footer>
-            <p> My email is <address>robertpowell15@yahoo.com</address>
-            </p>
-            <small>Roberts Trading Card Collection - All rights reserved</small>
-        </footer>
+    
+    </footer>
 
-    </div>
-
+    <script src="app.js"></script>
 </body>
-
 </html>
