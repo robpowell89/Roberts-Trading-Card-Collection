@@ -24,7 +24,11 @@ body {
 header {
     background-color: #B0C4DE;
 }
-
+header img {
+    float: left;
+    height: 85px;
+    padding-right: 10px;
+}
 
 header h1, header h2 {
     margin: 0;
