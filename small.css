@@ -90,6 +90,28 @@ main p {
 }
 
 
+
+
+.labeled {position: relative;}
+.labeled h6, .labeled p {
+    position: absolute;
+    background-color: #B0C4DE;
+    margin: 0;
+    width: 100%;
+    padding: .3rem 1rem;
+}
+.labeled h6 {
+    top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.labeled p {
+    bottom: 0;
+    font-weight: 700;
+    color:royalblue;
+}
+
+
 footer {
     background-color: #B0C4DE;
     font-size: 1.2rem;
